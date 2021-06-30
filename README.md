@@ -5,7 +5,7 @@ This Application contains few endpoints that consume the SWAPI (https://swapi.de
 1. List of endpoints available to use
 2. Ability to add new Movie/Planet to the storage
 3. Listing the Movies/Planets by fetching from SWAPI & storage used
-4. Searching/Filtering both Movies/Planets
+4. Searching/Filtering by Planets
 
 ## Installation
 
