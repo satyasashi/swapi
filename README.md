@@ -11,7 +11,7 @@ This Application contains few endpoints that consume the SWAPI (https://swapi.de
 
 Firstly, open your terminal or command prompt and clone this repository.
 
-`$ git clone https://github.com/satyasashi/spotdraft-swapi.git`
+`$ git clone https://github.com/satyasashi/swapi.git`
 
 Create a virtual environment
 
@@ -23,7 +23,7 @@ Activate the environment
 
 Install dependencies by moving to project path.
 
-`$ cd spotdraft-swapi && pip install -r requirements.txt`
+`$ cd swapi && pip install -r requirements.txt`
 
 Do the initial migrations
 
