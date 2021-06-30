@@ -174,6 +174,50 @@ X-Frame-Options: DENY
 
 ```
 
+### Searching / Filtering Planets
+
+You can filter the Planets by using following endpoint. Trying to filter using non existing data will result:
+
+```
+(swapienv)$: http http://localhost:8000/planets/search/XHSDK/
+HTTP/1.1 400 Bad Request
+Allow: GET, HEAD, OPTIONS
+Content-Length: 2
+Content-Type: application/json
+Date: Wed, 30 Jun 2021 20:25:29 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.8.5
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{}
+
+```
+
+Trying to filter with existing data result:
+
+```
+(swapienv)$: http http://localhost:8000/planets/search/Mars/
+HTTP/1.1 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Length: 22
+Content-Type: application/json
+Date: Wed, 30 Jun 2021 20:27:13 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.8.5
+Vary: Accept, Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+[
+    {
+        "name": "mars"
+    }
+]
+
+```
+
 ### Adding Movie
 
 Movie should have a `title`. So when passing data, you should pass the `title` as your argument. If not, it will throw `This field is required` for that field.
