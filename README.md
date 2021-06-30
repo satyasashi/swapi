@@ -1,7 +1,5 @@
 # Consuming SWAPI using DRF
 
----
-
 This Application contains few endpoints that consume the SWAPI (https://swapi.dev/). Following are the basic operations you can perform:
 
 1. List of endpoints available to use
