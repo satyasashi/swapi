@@ -51,13 +51,9 @@ The 3 tests it ran are for operations such as "Adding Movie", "Adding Planet" an
 
 To use the endpoints in this application, navigate to: (http://localhost:8000/)
 
-### Available Endpoints | API ROOT
+### Available Endpoints | API Root
 
-You will see API ROOT which shows the list of endpoints available in this application like below.
-
-OR
-
-You can also use terminal to call these endpoints using utilities like `http`, `curl` etc,.
+You will see API ROOT which shows the list of endpoints available in this application and can call endpoints using utilities like `http`, `curl` etc,. In this scenario, I will be using `http` utility.
 
 ```
 (swapienv)$ http http://localhost:8000
