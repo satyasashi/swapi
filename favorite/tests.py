@@ -26,6 +26,10 @@ class AddPlanetTestCase(APITestCase):
         response = self.client.post("/planets/", data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
+        # now search for the planet 'Mars'
+        search = self.client.get("/planets/search/{}/".format(data["name"]))
+        self.assertEqual(search.status_code, status.HTTP_200_OK)
+
 
 class SearchPlanetTestCase(APITestCase):
     """This test will search for a 'Planet' that doesn't exist
