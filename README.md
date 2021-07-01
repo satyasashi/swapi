@@ -83,6 +83,7 @@ that are saved in our storage. The result will be joined together to show the da
 Here is the sample output
 
 ```
+(swapienv)$: http http://localhost:8000/planets/
 HTTP/1.1 200 OK
 Allow: GET, POST, HEAD, OPTIONS
 Content-Length: 217
@@ -124,6 +125,7 @@ that are saved in our storage. The result will be joined together to show the da
 Here is the sample output:
 
 ```
+(swapienv)$: http http://localhost:8000/planets/
 HTTP/1.1 200 OK
 Allow: GET, POST, HEAD, OPTIONS
 Content-Length: 217
